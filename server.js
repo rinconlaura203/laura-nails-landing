@@ -18,8 +18,6 @@ const PAYMENT_LINK = process.env.PAYMENT_LINK || 'https://tools.marcelocrm.com/p
 
 app.use(express.json());
 app.use(express.static(path.join(__dirname, 'public')));
-app.post('/upload-html', express.text({limit:'5mb'}), (req,res)=>{require('fs').writeFileSync('public/index.html',req.body,'utf-8');res.send('ok');});
-
 app.get('/api/config', (req, res) => {
   res.json({
     precio: CURSO_PRECIO_USD,
