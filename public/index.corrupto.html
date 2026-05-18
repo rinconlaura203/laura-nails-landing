@@ -1,0 +1,2010 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <m<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manicura Profesional · Edición 2026 | Laura Rincón</title>
+  <meta name="description" content="Master Class de Manicura Profesional con Laura Rincón · 20 años de trayectoria · Autoridad, Excelencia y Transformación." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,500&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --crema: #F5EDDB;
+      --crema-clara: #FBF6EA;
+      --nude: #D8B584;
+      --nude-claro: #E5C9A1;
+      --dorado: #B89968;
+      --dorado-claro: #C9A96E;
+      --marron-claro: #6B4E33;
+      --marron: #4A3528;
+      --marron-oscuro: #3D2817;
+      --marron-profundo: #2D1F14;
+      --texto: #3D2817;
+      --texto-suave: #6B4E33;
+      --blanco: #FFFCF5;
+      --sombra: 0 12px 32px rgba(74, 53, 40, 0.12);
+      --sombra-fuerte: 0 20px 50px rgba(74, 53, 40, 0.25);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      color: var(--texto);
+      background: var(--crema-clara);
+      line-height: 1.65;
+      font-weight: 400;
+    }
+    h1, h2, h3, h4 { font-family: 'Playfair Display', serif; font-weight: 500; letter-spacing: -0.01em; }
+    em, .italic { font-style: italic; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 28px; }
+    .eyebrow {
+      font-family: 'Inter', sans-serif;
+      font-size: 12px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--dorado);
+      font-weight: 500;
+      margin-bottom: 18px;
+    }
+    .dot-separator {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--dorado);
+      font-size: 11px;
+      letter-spacing: 3px;
+      margin-bottom: 24px;
+    }
+    .dot-separator::before, .dot-separator::after {
+      content: '·';
+      font-size: 24px;
+      color: var(--dorado);
+    }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(180deg, var(--crema) 0%, var(--crema-clara) 100%);
+      padding: 90px 0 100px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 8%; right: -10%;
+      width: 380px; height: 380px;
+      background: radial-gradient(circle, var(--nude) 0%, transparent 70%);
+      opacity: 0.4;
+      border-radius: 50%;
+      filter: blur(20px);
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -10%; left: -10%;
+      width: 420px; height: 420px;
+      background: radial-gradient(circle, var(--dorado-claro) 0%, transparent 70%);
+      opacity: 0.3;
+      border-radius: 50%;
+      filter: blur(20px);
+    }
+    .hero-inner { position: relative; z-index: 1; }
+    .hero .badge {
+      display: inline-block;
+      background: var(--blanco);
+      color: var(--marron);
+      padding: 10px 26px;
+      border-radius: 50px;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      box-shadow: 0 6px 20px rgba(74, 53, 40, 0.08);
+      margin-bottom: 30px;
+      border: 1px solid rgba(184, 153, 104, 0.2);
+    }
+    .hero h1 {
+      font-size: clamp(2.4rem, 6vw, 4.4rem);
+      line-height: 1.1;
+      margin-bottom: 28px;
+      color: var(--marron-oscuro);
+    }
+    .hero h1 .italic-accent {
+      font-style: italic;
+      color: var(--dorado);
+      font-weight: 400;
+    }
+    .hero .tagline {
+      font-family: 'Inter', sans-serif;
+      font-size: 13px;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+      color: var(--marron-claro);
+      margin-bottom: 36px;
+      font-weight: 500;
+    }
+    .hero .lead {
+      font-size: 1.15rem;
+      color: var(--texto-suave);
+      max-width: 680px;
+      margin: 0 auto 44px;
+      line-height: 1.7;
+    }
+    .hero .quote {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.05rem;
+      color: var(--marron);
+      max-width: 540px;
+      margin: 0 auto 40px;
+      padding: 24px 0;
+      border-top: 1px solid var(--dorado-claro);
+      border-bottom: 1px solid var(--dorado-claro);
+    }
+    .hero .quote small {
+      display: block;
+      font-style: normal;
+      font-family: 'Inter', sans-serif;
+      font-size: 11px;
+      letter-spacing: 3px;
+      color: var(--dorado);
+      margin-top: 12px;
+      text-transform: uppercase;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--marron-oscuro);
+      color: var(--crema);
+      padding: 18px 44px;
+      border: none;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1);
+      font-family: 'Inter', sans-serif;
+      position: relative;
+    }
+    .btn:hover {
+      transform: translateY(-2px);
+      background: var(--marron-profundo);
+      box-shadow: var(--sombra-fuerte);
+    }
+    .btn-gold {
+      background: linear-gradient(135deg, var(--dorado) 0%, var(--nude) 100%);
+      color: var(--marron-oscuro);
+    }
+    .btn-gold:hover {
+      background: linear-gradient(135deg, var(--dorado-claro) 0%, var(--nude-claro) 100%);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--marron);
+      border: 1px solid var(--marron);
+    }
+    .btn-outline:hover {
+      background: var(--marron);
+      color: var(--crema);
+    }
+
+    section { padding: 100px 0; }
+    .section-title { text-align: center; margin-bottom: 70px; }
+    .section-title h2 {
+      font-size: clamp(2rem, 4.5vw, 3rem);
+      color: var(--marron-oscuro);
+      max-width: 720px;
+      margin: 14px auto 0;
+      line-height: 1.2;
+    }
+    .section-title .lead {
+      max-width: 620px;
+      margin: 24px auto 0;
+      color: var(--texto-suave);
+      font-size: 1.05rem;
+      font-style: italic;
+    }
+    .center { text-align: center; }
+    .diamond {
+      text-align: center;
+      color: var(--dorado);
+      font-size: 14px;
+      margin: 40px 0;
+      letter-spacing: 12px;
+    }
+
+    /* CARTA DE BIENVENIDA */
+    .bienvenida {
+      background: var(--crema-clara);
+    }
+    .carta-card {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--blanco);
+      padding: 60px 56px;
+      border-radius: 8px;
+      box-shadow: var(--sombra);
+      position: relative;
+    }
+    .carta-card::before {
+      content: '"';
+      position: absolute;
+      top: 16px; left: 32px;
+      font-family: 'Playfair Display', serif;
+      font-size: 90px;
+      color: var(--dorado-claro);
+      line-height: 1;
+    }
+    .carta-card p {
+      font-size: 1.05rem;
+      color: var(--texto);
+      margin-bottom: 20px;
+      line-height: 1.8;
+    }
+    .carta-card p strong { color: var(--marron-oscuro); font-weight: 600; }
+    .carta-quote {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.4rem;
+      color: var(--marron-oscuro);
+      text-align: center;
+      padding: 30px 0;
+      margin-top: 30px;
+      border-top: 1px solid var(--dorado-claro);
+    }
+
+    /* INSTRUCTORA */
+    .instructora-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 30px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .stat-card {
+      background: var(--blanco);
+      padding: 36px 28px;
+      border-radius: 8px;
+      box-shadow: var(--sombra);
+      border-left: 3px solid var(--dorado);
+      transition: transform 0.3s;
+    }
+    .stat-card:hover { transform: translateY(-6px); }
+    .stat-card .number {
+      font-family: 'Playfair Display', serif;
+      font-size: 3.4rem;
+      color: var(--dorado);
+      line-height: 1;
+      margin-bottom: 6px;
+      font-weight: 400;
+    }
+    .stat-card .number-label {
+      font-size: 10px;
+      letter-spacing: 4px;
+      color: var(--marron-claro);
+      text-transform: uppercase;
+      margin-bottom: 18px;
+      display: block;
+    }
+    .stat-card h4 {
+      font-size: 1.15rem;
+      color: var(--marron-oscuro);
+      margin-bottom: 10px;
+    }
+    .stat-card p {
+      color: var(--texto-suave);
+      font-size: 0.94rem;
+      line-height: 1.6;
+    }
+
+    /* PILARES */
+    .pilares {
+      background: linear-gradient(180deg, var(--crema-clara) 0%, var(--crema) 100%);
+    }
+    .pilar {
+      max-width: 920px;
+      margin: 0 auto 50px;
+      background: var(--blanco);
+      padding: 50px 50px 40px;
+      border-radius: 10px;
+      box-shadow: var(--sombra);
+      position: relative;
+    }
+    .pilar-header {
+      display: flex;
+      align-items: baseline;
+      gap: 24px;
+      margin-bottom: 18px;
+      padding-bottom: 22px;
+      border-bottom: 1px solid var(--nude-claro);
+    }
+    .pilar-roman {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 3.4rem;
+      color: var(--dorado);
+      line-height: 1;
+      font-weight: 400;
+    }
+    .pilar-titulo .eyebrow { margin-bottom: 6px; }
+    .pilar-titulo h3 {
+      font-size: 1.8rem;
+      color: var(--marron-oscuro);
+      margin: 0;
+    }
+    .pilar-subtitle {
+      font-style: italic;
+      color: var(--texto-suave);
+      margin-bottom: 28px;
+      font-size: 1rem;
+    }
+    .pilar-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px 32px;
+      list-style: none;
+    }
+    .pilar-items li {
+      padding-left: 18px;
+      position: relative;
+      color: var(--texto);
+      font-size: 0.96rem;
+      line-height: 1.55;
+      padding-top: 4px;
+    }
+    .pilar-items li::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 14px;
+      width: 8px; height: 1px;
+      background: var(--dorado);
+    }
+    .pilar-items li strong {
+      color: var(--marron-oscuro);
+      font-weight: 600;
+      display: inline;
+    }
+
+    /* INCLUYE / BONOS */
+    .incluye {
+      background: var(--marron-oscuro);
+      color: var(--crema);
+    }
+    .incluye .section-title h2 { color: var(--crema); }
+    .incluye .section-title .lead { color: rgba(245, 237, 219, 0.7); }
+    .incluye .eyebrow { color: var(--dorado-claro); }
+    .incluye-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      max-width: 980px;
+      margin: 0 auto;
+    }
+    .incluye-card {
+      background: rgba(245, 237, 219, 0.05);
+      border: 1px solid rgba(201, 169, 110, 0.25);
+      padding: 30px 28px;
+      border-radius: 8px;
+      transition: all 0.3s;
+    }
+    .incluye-card:hover {
+      background: rgba(245, 237, 219, 0.08);
+      border-color: var(--dorado);
+      transform: translateY(-4px);
+    }
+    .incluye-card h4 {
+      font-size: 1.2rem;
+      color: var(--dorado-claro);
+      margin-bottom: 10px;
+    }
+    .incluye-card p {
+      color: rgba(245, 237, 219, 0.78);
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+    .incluye-card.featured {
+      background: linear-gradient(135deg, rgba(184, 153, 104, 0.18) 0%, rgba(201, 169, 110, 0.10) 100%);
+      border-color: var(--dorado);
+      box-shadow: 0 0 30px rgba(184, 153, 104, 0.2);
+    }
+    .incluye-card.featured .bono-badge {
+      display: inline-block;
+      background: var(--dorado);
+      color: var(--marron-oscuro);
+      padding: 4px 14px;
+      border-radius: 20px;
+      font-size: 10px;
+      letter-spacing: 3px;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    /* QUIZ */
+    .quiz {
+      background: linear-gradient(180deg, var(--crema-clara) 0%, var(--nude-claro) 100%);
+    }
+    .quiz-box {
+      background: var(--blanco);
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 56px 52px;
+      border-radius: 10px;
+      box-shadow: var(--sombra-fuerte);
+    }
+    .quiz-progress {
+      height: 4px;
+      background: rgba(184, 153, 104, 0.2);
+      border-radius: 10px;
+      margin-bottom: 36px;
+      overflow: hidden;
+    }
+    .quiz-progress-bar {
+      height: 100%;
+      background: linear-gradient(90deg, var(--dorado) 0%, var(--marron) 100%);
+      width: 0%;
+      transition: width 0.5s ease;
+    }
+    .quiz-step { display: none; }
+    .quiz-step.active { display: block; animation: fadeIn 0.5s; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+    .quiz-counter {
+      color: var(--dorado);
+      font-size: 11px;
+      font-weight: 500;
+      margin-bottom: 14px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+    .quiz-question {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.6rem;
+      color: var(--marron-oscuro);
+      margin-bottom: 32px;
+      line-height: 1.35;
+    }
+    .quiz-options { display: flex; flex-direction: column; gap: 12px; }
+    .quiz-option {
+      background: var(--crema-clara);
+      border: 1px solid transparent;
+      padding: 18px 24px;
+      border-radius: 6px;
+      cursor: pointer;
+      text-align: left;
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      color: var(--texto);
+      transition: all 0.25s;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+    .quiz-option:hover {
+      border-color: var(--dorado);
+      background: var(--crema);
+      transform: translateX(4px);
+    }
+    .quiz-option.selected {
+      border-color: var(--marron);
+      background: var(--nude-claro);
+      font-weight: 500;
+      color: var(--marron-oscuro);
+    }
+    .quiz-form-step input {
+      width: 100%;
+      padding: 16px 20px;
+      border: 1px solid var(--nude-claro);
+      border-radius: 6px;
+      font-size: 1rem;
+      font-family: 'Inter', sans-serif;
+      margin-bottom: 14px;
+      transition: border-color 0.3s;
+      background: var(--crema-clara);
+      color: var(--texto);
+    }
+    .quiz-form-step input:focus {
+      outline: none;
+      border-color: var(--marron);
+      background: var(--blanco);
+    }
+    .quiz-nav { display: flex; justify-content: space-between; margin-top: 36px; gap: 14px; }
+    .quiz-nav button { flex: 1; }
+
+    /* RESULTADO */
+    .result-box { text-align: center; }
+    .result-level {
+      display: inline-block;
+      background: var(--marron-oscuro);
+      color: var(--dorado-claro);
+      padding: 10px 28px;
+      border-radius: 30px;
+      font-weight: 500;
+      letter-spacing: 4px;
+      margin-bottom: 24px;
+      text-transform: uppercase;
+      font-size: 11px;
+    }
+    .result-box h3 { font-size: 1.9rem; margin-bottom: 18px; color: var(--marron-oscuro); }
+    .result-box .result-desc {
+      color: var(--texto-suave);
+      margin-bottom: 36px;
+      font-size: 1.02rem;
+      line-height: 1.7;
+      max-width: 580px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* PRECIO */
+    .precio-card {
+      background: linear-gradient(135deg, var(--marron-oscuro) 0%, var(--marron-profundo) 100%);
+      color: var(--crema);
+      padding: 48px 40px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      border: 1px solid var(--dorado);
+      position: relative;
+      overflow: hidden;
+    }
+    .precio-card::before {
+      content: '';
+      position: absolute;
+      top: -50%; right: -20%;
+      width: 60%; height: 200%;
+      background: radial-gradient(circle, var(--dorado-claro) 0%, transparent 60%);
+      opacity: 0.15;
+    }
+    .precio-eyebrow {
+      font-size: 11px;
+      letter-spacing: 4px;
+      color: var(--dorado-claro);
+      margin-bottom: 14px;
+      text-transform: uppercase;
+    }
+    .precio-card .nombre {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      margin-bottom: 18px;
+      color: var(--crema);
+    }
+    .precio {
+      font-size: 4.2rem;
+      font-family: 'Playfair Display', serif;
+      color: var(--crema);
+      font-weight: 400;
+      line-height: 1;
+      margin: 16px 0;
+    }
+    .precio small {
+      font-size: 1rem;
+      color: var(--dorado-claro);
+      font-weight: 400;
+      letter-spacing: 3px;
+    }
+    .precio-features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      padding: 24px 0 0;
+      border-top: 1px solid rgba(201, 169, 110, 0.3);
+      margin-top: 24px;
+    }
+    .precio-feature {
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    .precio-feature strong {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--dorado-claro);
+      letter-spacing: 0;
+      text-transform: none;
+      margin-bottom: 2px;
+    }
+    .garantia-text {
+      font-size: 0.85rem;
+      color: var(--texto-suave);
+      margin-top: 16px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--marron-profundo);
+      color: var(--crema);
+      padding: 60px 0 28px;
+      text-align: center;
+    }
+    footer .footer-quote {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 1.4rem;
+      color: var(--dorado-claro);
+      margin-bottom: 30px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.5;
+    }
+    footer p { font-size: 0.88rem; opacity: 0.7; margin-bottom: 8px; }
+    footer a { color: var(--dorado-claro); text-decoration: none; }
+
+    /* HERO CTA GROUP */
+    .hero-cta-group {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* STICKY CTA */
+    .sticky-cta {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 100;
+      background: linear-gradient(135deg, var(--dorado) 0%, var(--nude) 100%);
+      color: var(--marron-oscuro);
+      padding: 16px 28px;
+      border-radius: 50px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      box-shadow: 0 10px 30px rgba(74, 53, 40, 0.3);
+      transition: all 0.3s cubic-bezier(0.2, 0.8, 0.2, 1);
+      font-family: 'Inter', sans-serif;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .sticky-cta:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 36px rgba(74, 53, 40, 0.4);
+      background: linear-gradient(135deg, var(--dorado-claro) 0%, var(--nude-claro) 100%);
+    }
+    .sticky-cta-icon { font-size: 14px; }
+
+    /* PLANES DE INVERSIÓN */
+    .inversion {
+      background: linear-gradient(180deg, var(--crema) 0%, var(--crema-clara) 100%);
+    }
+    .inversion .section-title h2 { color: var(--marron-oscuro); }
+    .planes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 28px;
+      max-width: 1080px;
+      margin: 0 auto;
+      align-items: stretch;
+    }
+    .plan-card {
+      background: var(--blanco);
+      border-radius: 12px;
+      padding: 40px 32px;
+      box-shadow: var(--sombra);
+      border: 1px solid rgba(184, 153, 104, 0.15);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s;
+    }
+    .plan-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--sombra-fuerte);
+    }
+    .plan-card.featured {
+      background: linear-gradient(180deg, var(--marron-oscuro) 0%, var(--marron-profundo) 100%);
+      color: var(--crema);
+      border: 1px solid var(--dorado);
+      transform: scale(1.04);
+      box-shadow: 0 16px 40px rgba(74, 53, 40, 0.3);
+    }
+    .plan-card.featured:hover {
+      transform: scale(1.04) translateY(-8px);
+    }
+    .plan-tag {
+      display: inline-block;
+      align-self: flex-start;
+      font-size: 10px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: 500;
+      padding: 6px 14px;
+      border-radius: 20px;
+      background: rgba(184, 153, 104, 0.15);
+      color: var(--dorado);
+      margin-bottom: 18px;
+    }
+    .plan-card.featured .plan-tag {
+      background: var(--dorado);
+      color: var(--marron-oscuro);
+      font-weight: 600;
+    }
+    .plan-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+      color: var(--marron-oscuro);
+    }
+    .plan-card.featured h3 { color: var(--crema); }
+    .plan-subtitle {
+      font-size: 0.92rem;
+      color: var(--texto-suave);
+      margin-bottom: 24px;
+      font-style: italic;
+      line-height: 1.5;
+    }
+    .plan-card.featured .plan-subtitle { color: rgba(245, 237, 219, 0.75); }
+    .plan-price {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      color: var(--marron-oscuro);
+      line-height: 1;
+      margin-bottom: 6px;
+      font-weight: 400;
+    }
+    .plan-card.featured .plan-price { color: var(--dorado-claro); }
+    .plan-price small {
+      font-size: 0.85rem;
+      color: var(--texto-suave);
+      font-weight: 400;
+      letter-spacing: 2px;
+      display: inline-block;
+      margin-left: 4px;
+    }
+    .plan-card.featured .plan-price small { color: rgba(245, 237, 219, 0.7); }
+    .plan-detail {
+      font-size: 0.92rem;
+      color: var(--texto-suave);
+      margin-bottom: 24px;
+      line-height: 1.6;
+    }
+    .plan-card.featured .plan-detail { color: rgba(245, 237, 219, 0.78); }
+    .plan-features {
+      list-style: none;
+      margin-bottom: 28px;
+      flex-grow: 1;
+    }
+    .plan-features li {
+      padding: 8px 0 8px 24px;
+      position: relative;
+      font-size: 0.92rem;
+      color: var(--texto);
+      line-height: 1.5;
+    }
+    .plan-card.featured .plan-features li { color: rgba(245, 237, 219, 0.88); }
+    .plan-features li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      top: 8px;
+      color: var(--dorado);
+      font-weight: 700;
+    }
+    .plan-card.featured .plan-features li::before { color: var(--dorado-claro); }
+    .savings-badge {
+      display: inline-block;
+      background: var(--dorado);
+      color: var(--marron-oscuro);
+      padding: 5px 14px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+      text-transform: uppercase;
+    }
+    .plan-card.featured .savings-badge {
+      background: var(--dorado-claro);
+      color: var(--marron-oscuro);
+    }
+    .plan-card .btn {
+      width: 100%;
+      text-align: center;
+      padding: 16px 20px;
+      font-size: 12px;
+      box-sizing: border-box;
+    }
+    .plan-card.featured .btn {
+      background: var(--dorado);
+      color: var(--marron-oscuro);
+    }
+    .plan-card.featured .btn:hover {
+      background: var(--dorado-claro);
+    }
+    .inversion-note {
+      text-align: center;
+      max-width: 720px;
+      margin: 50px auto 0;
+      padding: 24px 28px;
+      background: rgba(255, 252, 245, 0.6);
+      border-left: 3px solid var(--dorado);
+      border-radius: 6px;
+      font-size: 0.95rem;
+      color: var(--texto-suave);
+      line-height: 1.7;
+      font-style: italic;
+    }
+    .inversion-note strong { color: var(--marron-oscuro); font-style: normal; }
+
+    @media (max-width: 720px) {
+      section { padding: 70px 0; }
+      .carta-card { padding: 40px 28px; }
+      .pilar { padding: 36px 28px; }
+      .pilar-header { flex-direction: column; gap: 8px; align-items: flex-start; }
+      .pilar-roman { font-size: 2.4rem; }
+      .quiz-box { padding: 36px 24px; }
+      .precio-card { padding: 36px 24px; }
+      .precio-features { grid-template-columns: 1fr; gap: 12px; }
+      .hero { padding: 70px 0 80px; }
+      .stat-card .number { font-size: 2.8rem; }
+      .hero-cta-group { flex-direction: column; gap: 12px; }
+      .hero-cta-group .btn { width: 100%; text-align: center; box-sizing: border-box; }
+      .plan-card.featured { transform: none; }
+      .plan-card.featured:hover { transform: translateY(-6px); }
+      .plan-card { padding: 32px 26px; }
+      .sticky-cta {
+        bottom: 14px;
+        right: 14px;
+        padding: 12px 20px;
+        font-size: 11px;
+        letter-spacing: 1.5px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <span class="badge">Edición 2026</span>
+      <h1>Manicura <span class="italic-accent">Profesional</span></h1>
+      <p class="tagline">Aprende · Construye · Transforma</p>
+      <p class="lead">El curso completo para mujeres que quieren <strong>aprender uñas desde cero</strong>, generar sus propios ingresos y dejar de depender de un trabajo que las consume. Método paso a paso, sin asumir nada — diseñado para que tengas tus primeras clientas con seguridad.</p>
+      <div class="quote">
+        "Una gran manicurista no nace,<br/>ella se hace, se construye."
+        <small>— Laura Rincón</small>
+      </div>
+      <div class="hero-cta-group">
+        <a href="#inversion" class="btn btn-gold">Quiero apartar mi cupo</a>
+        <a href="#quiz" class="btn btn-outline">Descubre tu nivel</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARTA DE BIENVENIDA -->
+  <section class="bienvenida">
+    <div class="container">
+      <div class="section-title">
+        <p class="eyebrow">Carta de Bienvenida</p>
+        <h2>Bienvenida a tu nueva realidad de <em>libertad</em></h2>
+      </div>
+      <div class="carta-card">
+        <p>Bienvenida al momento en que decides que tu vida — y la de tu familia — depende solo de ti. Hoy das el primer paso para construir algo que nadie te puede quitar: <strong>una profesión propia, ingresos que generas con tus propias manos, y el tiempo de calidad que mereces</strong>.</p>
+        <p>Este programa está diseñado para mujeres como tú: sin experiencia previa en uñas, sin tiempo de sobra, pero con la claridad de que no pueden seguir igual. Aquí no se asume que sabes nada. Aprendes paso a paso — desde la esterilización hasta tus primeras clientas pagadas — con un <strong>método estructurado que YouTube nunca te va a dar</strong>.</p>
+        <p>Mi compromiso contigo es entregarte la técnica, la seguridad y la base de negocio para que en pocos meses estés cobrando por tu trabajo, atendiendo desde tu propio espacio, y respirando una libertad que hoy parece lejana.</p>
+        <div class="carta-quote">"Hoy tu mente y tu pincel se alinean con un solo propósito: la excelencia."</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOBRE LA INSTRUCTORA -->
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <p class="eyebrow">Sobre tu Instructora</p>
+        <h2>Dos décadas perfeccionando el <em>arte</em></h2>
+        <p class="lead">Trayectoria, técnica y visión empresarial reunidas en una sola voz que ha formado a manicuristas en Colombia y Estados Unidos.</p>
+      </div>
+      <div class="instructora-grid">
+        <div class="stat-card">
+          <div class="number">20</div>
+          <span class="number-label">Años</span>
+          <h4>Trayectoria en el arte</h4>
+          <p>Una vida construida desde la práctica diaria, la pasión por el detalle y la búsqueda incansable de la perfección técnica.</p>
+        </div>
+        <div class="stat-card">
+          <div class="number">07</div>
+          <span class="number-label">Años</span>
+          <h4>Manicurista profesional</h4>
+          <p>Perfeccionando técnica, servicio al cliente y visión de crecimiento. Cada uña, una declaración de estándar.</p>
+        </div>
+        <div class="stat-card">
+          <div class="number">05</div>
+          <span class="number-label">Años</span>
+          <h4>Maestra en Organic Nails</h4>
+          <p>Formación profesional impartida en Colombia y Estados Unidos. Manicuristas capacitadas que hoy lideran sus propios espacios y atienden con confianza.</p>
+        </div>
+        <div class="stat-card">
+          <div class="number">∞</div>
+          <span class="number-label">Pasión</span>
+          <h4>Especialista en salón</h4>
+          <p>Enfoque comercial con resultados reales. He aprendido en el día a día lo que una clienta sí pide y sí paga — no técnicas extremas complicadas de aprender que el mercado no compra.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOS 3 PILARES -->
+  <section class="pilares">
+    <div class="container">
+      <div class="section-title">
+        <p class="eyebrow">El Método</p>
+        <h2>Los tres pilares de tu <em>transformación</em></h2>
+      </div>
+
+      <div class="pilar">
+        <div class="pilar-header">
+          <div class="pilar-roman">I</div>
+          <div class="pilar-titulo">
+            <p class="eyebrow">Pilar Técnico</p>
+            <h3>Ingeniería de Precisión</h3>
+          </div>
+        </div>
+        <p class="pilar-subtitle">Domina las técnicas que definen a una manicurista de clase mundial.</p>
+        <ul class="pilar-items">
+          <li><strong>Dry Manicure</strong> — limpieza profesional y técnica de cero desprendimiento</li>
+          <li><strong>Extensiones Express</strong> — aplicación rápida e impecable</li>
+          <li><strong>Extensiones con Dual</strong> — durabilidad máxima</li>
+          <li><strong>Decoración Avanzada</strong> — cada uña, una obra</li>
+          <li><strong>Ingeniería del Drill</strong> — tu herramienta más poderosa</li>
+          <li><strong>Protocolos de Higiene</strong> — estándares profesionales</li>
+        </ul>
+      </div>
+
+      <div class="pilar">
+        <div class="pilar-header">
+          <div class="pilar-roman">II</div>
+          <div class="pilar-titulo">
+            <p class="eyebrow">Pilar Mentalidad</p>
+            <h3>Tu Fortaleza Interior</h3>
+          </div>
+        </div>
+        <p class="pilar-subtitle">Para tener una agenda llena y ser profesional de éxito, necesitas mentalidad ganadora.</p>
+        <ul class="pilar-items">
+          <li><strong>Mindset de Abundancia</strong> — atrae clientas de calidad</li>
+          <li><strong>Disciplina Estratégica</strong> — hábitos que llevan al éxito</li>
+          <li><strong>Gestión Emocional</strong> — control bajo presión</li>
+          <li><strong>Confianza en Ti Misma</strong> — proyecta autoridad</li>
+          <li><strong>Visión Empresarial</strong> — piensa como dueña</li>
+          <li><strong>Resiliencia</strong> — obstáculos en oportunidades</li>
+        </ul>
+      </div>
+
+      <div class="pilar">
+        <div class="pilar-header">
+          <div class="pilar-roman">III</div>
+          <div class="pilar-titulo">
+            <p class="eyebrow">Pilar Marketing & Ventas</p>
+            <h3>Sé Visible, Sé Requerida</h3>
+          </div>
+        </div>
+        <p class="pilar-subtitle">Estrategias para hacerte visible y convertir encuentros en citas agendadas.</p>
+        <ul class="pilar-items">
+          <li><strong>Personal Branding</strong> — posicionamiento único</li>
+          <li><strong>Social Media</strong> — Instagram, TikTok con propósito</li>
+          <li><strong>Perfiles Optimizados</strong> — máquina de leads</li>
+          <li><strong>Contenido Viral</strong> — engagement real</li>
+          <li><strong>SEO Local</strong> — encontrada por tu cliente ideal</li>
+          <li><strong>Retención & Automatización</strong> — clientas recurrentes</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- LO QUE INCLUYE / BONOS -->
+  <section class="incluye">
+    <div class="container">
+      <div class="section-title">
+        <p class="eyebrow">Metodología</p>
+        <h2>Tu inversión en <em>ti misma</em></h2>
+        <p class="lead">Más que un curso, una transformación con seguimiento personal y acceso ilimitado.</p>
+      </div>
+      <div class="incluye-grid">
+        <div class="incluye-card">
+          <h4>Aprendizaje Práctico</h4>
+          <p>Curso pregrabado con demostraciones en vivo de cada técnica del programa. Estudias a tu ritmo, sin presión.</p>
+        </div>
+        <div class="incluye-card">
+          <h4>2 Sesiones en Vivo Semanales</h4>
+          <p>Acompañamiento real con Laura: negocio, marketing, mentalidad de empresaria, precios y actualizaciones de técnicas nuevas.</p>
+        </div>
+        <div class="incluye-card">
+          <h4>Mentoría Personalizada</h4>
+          <p>Seguimiento individual durante todo tu progreso. No estás sola en este camino.</p>
+               </div>
+        <div class="incluye-card">
+          <h4>Comunidad de Élite</h4>
+          <p>Red privada de manicuristas profesionales en crecimiento, donde construyes relaciones que se convierten en oportunidades.</p>
+        </div>
+        <div class="incluye-card">
+          <h4>Certificado de Aprobación</h4>
+          <p>Certificado de aprobación y participación que aumenta tu autoridad ante tu clienta y respalda tu trabajo en la industria.</p>
+        </div>
+        <div class="incluye-card featured">
+          <span class="bono-badge">Solo Este Grupo</span>
+          <h4>Acceso de por Vida</h4>
+          <p>Solo las alumnas de esta nueva edición tienen plataforma abierta de por vida. Ves todas las actualizaciones y entras a las sesiones en vivo sin límite. Es tuyo para siempre — pero solo si entras en este grupo.</p>
+        </div>
+        <div class="incluye-card featured">
+          <span class="bono-badge">Bonus Edición 2026</span>
+          <h4>PNL + Audios de Poder</h4>
+          <p>Programación neurolingüística aplicada y audios diseñados para reprogramar tu mente. Metodología de aprendizaje acelerado que multiplica tus resultados — exclusivo para alumnas de esta edición.</p>
+        </div>
+        <div class="incluye-card">
+          <h4>Triplica tus Ingresos</h4>
+          <p>Las habilidades que te permitirán triplicar lo que ganas hoy, tener una agenda llena de clientas de calidad, y vivir el estilo de vida que mereces.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANES DE INVERSIÓN -->
+  <section class="inversion" id="inversion">
+    <div class="container">
+      <div class="section-title">
+        <p class="eyebrow">Tu Inversión · Edición 2026</p>
+        <h2>Tres formas de hacerlo <em>realidad</em></h2>
+        <p class="lead">Sabemos que cada mujer está en un momento distinto. Por eso diseñamos tres caminos para que entres al curso según tu situación actual.</p>
+      </div>
+      <div class="planes-grid">
+        <!-- PLAN 1: RESERVA -->
+        <div class="plan-card">
+          <span class="plan-tag">Aparta hoy</span>
+          <h3>Reserva tu Cupo</h3>
+          <p class="plan-subtitle">Asegura tu lugar en este grupo</p>
+          <p class="plan-price">$100 <small>USD</small></p>
+          <p class="plan-detail">Aparta tu cupo HOY con solo $100 USD y completa tu inscripción en los próximos <strong>5 días</strong>. Diseñado para mujeres que organizan su inversión con tiempo.</p>
+          <ul class="plan-features">
+            <li>Lugar asegurado en la Edición 2026</li>
+            <li>5 días para completar el saldo</li>
+            <li>Aplica al plan que elijas después</li>
+            <li>Cupos limitados</li>
+          </ul>
+          <a href="https://tools.marcelocrm.com/payment-link/6a0a6eba8b5b8ce07e5d1afb" target="_blank" rel="noopener" class="btn btn-outline plan-cta" data-plan="reserva">Quiero apartar mi cupo</a>
+        </div>
+
+        <!-- PLAN 2: PAGO ÚNICO (DESTACADO) -->
+        <div class="plan-card featured">
+          <span class="plan-tag">Más elegida</span>
+          <h3>Pago Único</h3>
+          <p class="plan-subtitle">Oferta especial de relanzamiento</p>
+          <span class="savings-badge">Ahorras $300</span>
+          <p class="plan-price">$897 <small>USD</small></p>
+          <p class="plan-detail">Precio especial por relanzamiento de la Edición 2026. Acceso inmediato y completo desde el primer día.</p>
+          <ul class="plan-features">
+            <li>Acceso de por vida a la plataforma</li>
+            <li>Todas las sesiones en vivo incluidas</li>
+            <li>Certificado de aprobación</li>
+            <li>Bonos exclusivos de esta edición</li>
+            <li>Mentoría personalizada</li>
+          </ul>
+          <a href="https://tools.marcelocrm.com/payment-link/6a0a6ef88b5b8ce07e5d1afc" target="_blank" rel="noopener" class="btn plan-cta" data-plan="pago-unico">Inscribirme ahora</a>
+        </div>
+
+        <!-- PLAN 3: 3 CUOTAS -->
+        <div class="plan-card">
+          <span class="plan-tag">Paga a tu ritmo</span>
+          <h3>3 Cuotas</h3>
+          <p class="plan-subtitle">Inversión dividida sin presión</p>
+          <p class="plan-price">$399 <small>USD/mes</small></p>
+          <p class="plan-detail">Total: <strong>$1,197 USD</strong> en 3 cuotas mensuales. Empieza el curso desde la primera cuota.</p>
+          <ul class="plan-features">
+            <li>Inicio inmediato del curso</li>
+            <li>3 pagos mensuales de $399</li>
+            <li>Mismo acceso completo a todo el contenido</li>
+            <li>Certificado y bonos incluidos</li>
+          </ul>
+          <a href="https://tools.marcelocrm.com/payment-link/6a0a6f838b5b8ce07e5d1afe" target="_blank" rel="noopener" class="btn btn-outline plan-cta" data-plan="cuotas">Empezar con la 1ª cuota</a>
+        </div>
+      </div>
+      <div class="inversion-note">
+        <strong>¿Por qué ofrecemos un plan de reserva?</strong> Porque sabemos que muchas de nuestras alumnas trabajan por un sueldo y organizan su inversión con tiempo. Queremos que asegures tu cupo en este grupo sin presión y completes el pago cuando llegue tu cheque.
+      </div>
+    </div>
+  </section>
+
+  <section class="quiz" id="quiz">
+    <div class="container">
+      <div class="section-title">
+        <p class="eyebrow">Diagnóstico Gratuito · 1 minuto</p>
+        <h2>Descubre dónde estás en tu <em>camino</em></h2>
+        <p class="lead">5 preguntas para identificar dónde te encuentras hoy y qué camino te llevará a ser la nail artist que sueñas.</p>
+      </div>
+      <div class="quiz-box">
+        <div class="quiz-progress"><div class="quiz-progress-bar" id="progressBar"></div></div>
+
+        <div class="quiz-step active" data-step="1">
+          <p class="quiz-counter">Pregunta 1 de 5</p>
+          <h3 class="quiz-question">¿Cuál es tu experiencia actual con las uñas?</h3>
+          <div class="quiz-options" data-q="q1">
+            <button class="quiz-option" data-value="0">Parto desde cero absoluto, nunca he tocado un pincel</button>
+            <button class="quiz-option" data-value="1">He visto tutoriales en YouTube pero no me siento segura</button>
+            <button class="quiz-option" data-value="2">He hecho uñas a familia o amigas, pero sin método</button>
+            <button class="quiz-option" data-value="3">Ya hago uñas pero quiero aprender bien y profesionalizarme</button>
+          </div>
+        </div>
+
+        <div class="quiz-step" data-step="2">
+          <p class="quiz-counter">Pregunta 2 de 5</p>
+          <h3 class="quiz-question">¿Qué te empuja a aprender uñas profesionalmente?</h3>
+          <div class="quiz-options" data-q="q2">
+            <button class="quiz-option" data-value="0">Quiero estar presente para mis hijos — no perderme sus momentos por un trabajo que me consume</button>
+            <button class="quiz-option" data-value="1">Estoy agotada del horario extenuante de mi trabajo actual — ya no doy más</button>
+            <button class="quiz-option" data-value="2">Quiero generar 3 veces mi sueldo actual, pero desde mi propio espacio</button>
+            <button class="quiz-option" data-value="3">Sueño con trabajar para mí misma y dejar de depender de nadie</button>
+          </div>
+        </div>
+
+        <div class="quiz-step" data-step="3">
+          <p class="quiz-counter">Pregunta 3 de 5</p>
+          <h3 class="quiz-question">¿Cuál es tu mayor miedo al empezar este camino?</h3>
+          <div class="quiz-options" data-q="q3">
+            <button class="quiz-option" data-value="0">Tengo miedo de dañar a una clienta (piel, infecciones, reacciones)</button>
+            <button class="quiz-option" data-value="1">"¿Y si no tengo manos para esto?"</button>
+            <button class="quiz-option" data-value="2">Invertir en un curso y que no me funcione</button>
+            <button class="quiz-option" data-value="3">No saber por dónde empezar — me falta estructura y método</button>
+          </div>
+        </div>
+
+        <div class="quiz-step" data-step="4">
+          <p class="quiz-counter">Pregunta 4 de 5</p>
+          <h3 class="quiz-question">¿Cuánto tiempo puedes dedicar a aprender cada semana?</h3>
+          <div class="quiz-options" data-q="q4">
+            <button class="quiz-option" data-value="0">Solo ratos cortos (cuando los niños duermen, en pausas)</button>
+            <button class="quiz-option" data-value="1">Algunos días entre semana después del trabajo</button>
+            <button class="quiz-option" data-value="2">Los fines de semana completos</button>
+            <button class="quiz-option" data-value="3">Tengo bastante tiempo libre y quiero aprender lo más rápido posible</button>
+          </div>
+        </div>
+
+        <div class="quiz-step" data-step="5">
+          <p class="quiz-counter">Pregunta 5 de 5</p>
+          <h3 class="quiz-question">¿Cuál es tu meta en los próximos 12 meses?</h3>
+          <div class="quiz-options" data-q="q5">
+            <button class="quiz-option" data-value="0">Hacer uñas a familia y amigas con seguridad y confianza</button>
+            <button class="quiz-option" data-value="1">Conseguir mis primeras clientas pagadas</button>
+            <button class="quiz-option" data-value="2">Tener clientela fija que me dé ingresos estables mensuales</button>
+            <button class="quiz-option" data-value="3">Trabajar 100% desde casa o montar mi propio espacio profesional</button>
+          </div>
+        </div>
+
+        <div class="quiz-step quiz-form-step" data-step="6">
+          <p class="quiz-counter">Casi listo</p>
+          <h3 class="quiz-question">¿A dónde te enviamos tu diagnóstico personalizado?</h3>
+          <input type="text" id="nombre" placeholder="Tu nombre" required />
+          <input type="email" id="email" placeholder="Tu mejor email" required />
+          <p style="font-size:0.86rem;color:var(--texto-suave);margin-bottom:22px;line-height:1.5;">Te enviaremos tu resultado + una sorpresa por email. Sin spam, lo prometemos.</p>
+          <button class="btn btn-gold" id="submitQuiz" style="width:100%;">Ver mi diagnóstico →</button>
+        </div>
+
+        <div class="quiz-step result-box" data-step="7">
+          <span class="result-level" id="resultLevel">Nivel</span>
+          <h3 id="resultTitle">Tu diagnóstico está listo</h3>
+          <p class="result-desc" id="resultDesc"></p>
+
+          <div class="precio-card">
+            <p class="precio-eyebrow">Oferta de Relanzamiento</p>
+            <p class="nombre">Manicura Profesional · Edición 2026</p>
+            <p class="precio">$<span id="precioNum">897</span> <small>USD</small></p>
+            <p style="font-size:0.9rem;color:var(--dorado-claro);margin-top:-8px;margin-bottom:16px;letter-spacing:2px;">Ahorras $300 · Precio regular $1,197</p>
+            <div class="precio-features">
+              <div class="precio-feature">
+                <strong>De por vida</strong>
+                Acceso
+              </div>
+              <div class="precio-feature">
+                <strong>Incluida</strong>
+                Mentoría
+              </div>
+              <div class="precio-feature">
+                <strong>Oficial</strong>
+                Certificado
+              </div>
+            </div>
+          </div>
+
+          <a class="btn btn-gold" id="checkoutBtn" href="#inversion" style="width:100%;display:block;text-align:center;text-decoration:none;box-sizing:border-box;">Ver mis opciones de pago →</a>
+          <p class="garantia-text">Pago único · 3 cuotas · O reserva con solo $100</p>
+        </div>
+
+        <div class="quiz-nav" id="quizNav">
+          <button class="btn btn-outline" id="prevBtn" style="display:none;">← Atrás</button>
+          <button class="btn" id="nextBtn" disabled>Siguiente →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p class="footer-quote">"Hoy tu mente y tu pincel se alinean con un solo propósito: la excelencia."</p>
+      <p>© <span id="anio"></span> Laura Rincón · Master Nail Artist</p>
+      <p>Contacto: <a href="mailto:rinconlaura203@gmail.com">rinconlaura203@gmail.com</a></p>
+      <p><a href="https://www.instagram.com/laurarincon_nails" target="_blank" rel="noopener">@laurarincon_nails</a></p>
+    </div>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE FIJO -->
+  <a href="#inversion" id="stickyCta" class="sticky-cta" style="opacity:0;pointer-events:none;">
+    <span class="sticky-cta-icon">💅</span> Apartar mi cupo
+  </a>
+
+  <script>
+    document.getElementById('anio').textContent = new Date().getFullYear();
+    const answers = { q1: null, q2: null, q3: null, q4: null, q5: null };
+    let currentStep = 1;
+    const stepsConPregunta = 5;
+    const progressBar = document.getElementById('progressBar');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const quizNav = document.getElementById('quizNav');
+    fetch('/api/config').then(r => r.json()).then(cfg => {
+      if (cfg.precio) document.getElementById('precioNum').textContent = cfg.precio.toLocaleString('en-US');
+    }).catch(() => {});
+    function showStep(n) {
+      document.querySelectorAll('.quiz-step').forEach(el => el.classList.remove('active'));
+      const stepEl = document.querySelector(`.quiz-step[data-step="${n}"]`);
+      stepEl.classList.add('active');
+      currentStep = n;
+      const pct = Math.min(((n - 1) / stepsConPregunta) * 100, 100);
+      progressBar.style.width = pct + '%';
+      prevBtn.style.display = n > 1 && n <= 6 ? 'inline-block' : 'none';
+      if (n >= 6) {
+        quizNav.style.display = 'none';
+      } else {
+        quizNav.style.display = 'flex';
+        const key = 'q' + n;
+        nextBtn.disabled = answers[key] === null;
+        nextBtn.textContent = n === stepsConPregunta ? 'Continuar →' : 'Siguiente →';
+      }
+    }
+    document.querySelectorAll('.quiz-options').forEach(group => {
+      group.addEventListener('click', e => {
+        const btn = e.target.closest('.quiz-option');
+        if (!btn) return;
+        group.querySelectorAll('.quiz-option').forEach(o => o.classList.remove('selected'));
+        btn.classList.add('selected');
+        const q = group.dataset.q;
+        answers[q] = parseInt(btn.dataset.value, 10);
+        nextBtn.disabled = false;
+      });
+    });
+    nextBtn.addEventListener('click', () => { if (currentStep < 6) showStep(currentStep + 1); });
+    prevBtn.addEventListener('click', () => { if (currentStep > 1) showStep(currentStep - 1); });
+    document.getElementById('submitQuiz').addEventListener('click', async () => {
+      const nombre = document.getElementById('nombre').value.trim();
+      const email = document.getElementById('email').value.trim();
+      if (!nombre || !email || !email.includes('@')) { alert('Por favor completa tu nombre y un email válido.'); return; }
+      document.getElementById('submitQuiz').disabled = true;
+      document.getElementById('submitQuiz').textContent = 'Calculando tu diagnóstico...';
+      const total = answers.q1 + answers.q2 + answers.q3 + answers.q4 + answers.q5;
+      let nivel, titulo, descripcion;
+      if (total <= 4) {
+        nivel = 'En Despertar';
+        titulo = 'Eres una Nail Artist en Despertar';
+        descripcion = 'Estás en el inicio puro, y eso es perfecto. No necesitas saber nada todavía — el curso fue diseñado exactamente para ti, para llevarte de cero a profesional con un método paso a paso. Aquí no se asume nada; aquí aprendes TODO bien desde el primer día, sin saltos ni huecos.';
+      } else if (total <= 9) {
+        nivel = 'En Construcción';
+        titulo = 'Eres una Nail Artist en Construcción';
+        descripcion = 'Ya tienes la intención y algo de práctica, pero te falta la estructura que YouTube no te puede dar. El curso te entregará el método correcto, la técnica al detalle y la seguridad para empezar a cobrar por tu trabajo con confianza.';
+      } else {
+        nivel = 'Con Visión Empresarial';
+        titulo = 'Eres una Nail Artist con Visión Empresarial';
+        descripcion = 'Tienes claridad sobre lo que quieres construir y eso te diferencia. Lo que necesitas es la formación completa que te lleve de tu nivel actual a profesional con paso firme — técnica, mentalidad de negocio y la estrategia para conseguir tus primeras clientas pagadas.';
+      }
+      try {
+        await fetch('/api/quiz-submit', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ nombre, email, nivel, score: total, answers }) });
+      } catch (err) { console.warn('No se pudo guardar el lead:', err); }
+      document.getElementById('resultLevel').textContent = 'Nivel ' + nivel;
+      document.getElementById('resultTitle').textContent = titulo;
+      document.getElementById('resultDesc').textContent = descripcion;
+      window._leadData = { nombre, email, nivel, score: total };
+      showStep(7);
+    });
+    document.getElementById('checkoutBtn').addEventListener('click', () => {
+      try {
+        const lead = window._leadData || {};
+        fetch('/api/track-checkout-click', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({...lead, action: 'view-plans'}), keepalive: true }).catch(() => {});
+      } catch (e) {}
+    });
+
+    // Tracking de clicks en cada plan de pago
+    document.querySelectorAll('.plan-cta').forEach(btn => {
+      btn.addEventListener('click', () => {
+        try {
+          const lead = window._leadData || {};
+          const plan = btn.dataset.plan || 'unknown';
+          fetch('/api/track-checkout-click', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ ...lead, plan, action: 'payment-click' }), keepalive: true }).catch(() => {});
+        } catch (e) {}
+      });
+    });
+
+    // Botón flotante: aparece después de pasar el hero
+    const stickyCta = document.getElementById('stickyCta');
+    const showStickyAfter = 600;
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > showStickyAfter) {
+        stickyCta.style.opacity = '1';
+        stickyCta.style.pointerEvents = 'auto';
+      } else {
+        stickyCta.style.opacity = '0';
+        stickyCta.style.pointerEvents = 'none';
+      }
+    }, { passive: true });
+
+    showStep(1);
+  </script>
+
+</body>
+</html>
+eta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Curso Profesional de Uñas | Laura Rincón</title>
+  <meta name="description" content="Aprende técnicas profesionales de uñas con Laura Rincón. Haz el quiz gratuito y descubre tu nivel." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --rosa-suave: #fce8ec;
+      --rosa-medio: #f4a8b8;
+      --rosa-fuerte: #d77a8a;
+      --dorado: #c9a96e;
+      --crema: #fdf8f5;
+      --texto: #3a2a2f;
+      --texto-suave: #6b5760;
+      --blanco: #ffffff;
+      --sombra: 0 10px 30px rgba(215, 122, 138, 0.15);
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Poppins', sans-serif;
+      color: var(--texto);
+      background: var(--crema);
+      line-height: 1.6;
+    }
+    h1, h2, h3 { font-family: 'Playfair Display', serif; font-weight: 700; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, var(--rosa-suave) 0%, var(--crema) 100%);
+      padding: 80px 0 100px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -50px; right: -50px;
+      width: 250px; height: 250px;
+      background: var(--rosa-medio);
+      opacity: 0.15;
+      border-radius: 50%;
+    }
+    .hero::after {
+      content: '';
+      position: absolute;
+      bottom: -80px; left: -80px;
+      width: 300px; height: 300px;
+      background: var(--dorado);
+      opacity: 0.1;
+      border-radius: 50%;
+    }
+    .hero .badge {
+      display: inline-block;
+      background: var(--blanco);
+      color: var(--rosa-fuerte);
+      padding: 8px 20px;
+      border-radius: 30px;
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      box-shadow: var(--sombra);
+      margin-bottom: 24px;
+      position: relative;
+      z-index: 1;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      margin-bottom: 20px;
+      color: var(--texto);
+      position: relative;
+      z-index: 1;
+    }
+    .hero h1 span { color: var(--rosa-fuerte); font-style: italic; }
+    .hero p.lead {
+      font-size: 1.15rem;
+      color: var(--texto-suave);
+      max-width: 680px;
+      margin: 0 auto 40px;
+      position: relative;
+      z-index: 1;
+    }
+    .btn {
+      display: inline-block;
+      background: var(--rosa-fuerte);
+      color: white;
+      padding: 16px 38px;
+      border: none;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 20px rgba(215, 122, 138, 0.3);
+      font-family: inherit;
+      letter-spacing: 0.5px;
+    }
+    .btn:hover { transform: translateY(-3px); background: #c46878; box-shadow: 0 12px 28px rgba(215, 122, 138, 0.45); }
+    .btn-outline {
+      background: transparent;
+      color: var(--rosa-fuerte);
+      border: 2px solid var(--rosa-fuerte);
+      box-shadow: none;
+    }
+    .btn-outline:hover { background: var(--rosa-fuerte); color: white; }
+
+    section { padding: 80px 0; }
+    .section-title { text-align: center; margin-bottom: 60px; }
+    .section-title .eyebrow {
+      color: var(--rosa-fuerte);
+      font-size: 14px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+      font-weight: 500;
+    }
+    .section-title h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); color: var(--texto); }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    .feature-card {
+      background: var(--blanco);
+      padding: 36px 28px;
+      border-radius: 16px;
+      box-shadow: var(--sombra);
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .feature-card:hover { transform: translateY(-8px); }
+    .feature-icon {
+      width: 64px; height: 64px;
+      background: var(--rosa-suave);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 28px;
+    }
+    .feature-card h3 { font-size: 1.25rem; margin-bottom: 12px; }
+    .feature-card p { color: var(--texto-suave); font-size: 0.95rem; }
+
+    .modules { background: var(--rosa-suave); }
+    .modules-list { max-width: 800px; margin: 0 auto; }
+    .module-item {
+      background: white;
+      padding: 24px 28px;
+      border-radius: 12px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      box-shadow: 0 4px 12px rgba(215, 122, 138, 0.08);
+    }
+    .module-number {
+      width: 48px; height: 48px;
+      background: var(--rosa-fuerte);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+      flex-shrink: 0;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.2rem;
+    }
+    .module-item h4 { font-family: 'Poppins', sans-serif; margin-bottom: 4px; font-size: 1.05rem; font-weight: 600; }
+    .module-item p { color: var(--texto-suave); font-size: 0.92rem; margin: 0; }
+
+    .instructor { text-align: center; }
+    .instructor-img {
+      width: 140px; height: 140px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--rosa-medio), var(--dorado));
+      margin: 0 auto 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 60px;
+      color: white;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      box-shadow: var(--sombra);
+    }
+    .instructor h3 { font-size: 1.8rem; margin-bottom: 8px; }
+    .instructor .role { color: var(--rosa-fuerte); font-weight: 500; margin-bottom: 20px; }
+    .instructor .bio { max-width: 600px; margin: 0 auto 24px; color: var(--texto-suave); }
+    .ig-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--rosa-fuerte);
+      text-decoration: none;
+      font-weight: 500;
+      padding: 10px 20px;
+      border: 2px solid var(--rosa-suave);
+      border-radius: 30px;
+      transition: all 0.3s;
+    }
+    .ig-link:hover { background: var(--rosa-fuerte); color: white; border-color: var(--rosa-fuerte); }
+
+    .quiz {
+      background: linear-gradient(135deg, var(--crema) 0%, var(--rosa-suave) 100%);
+    }
+    .quiz-box {
+      background: white;
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 50px 40px;
+      border-radius: 20px;
+      box-shadow: 0 20px 50px rgba(215, 122, 138, 0.2);
+    }
+    .quiz-progress {
+      height: 6px;
+      background: var(--rosa-suave);
+      border-radius: 10px;
+      margin-bottom: 30px;
+      overflow: hidden;
+    }
+    .quiz-progress-bar {
+      height: 100%;
+      background: linear-gradient(90deg, var(--rosa-medio), var(--rosa-fuerte));
+      width: 0%;
+      transition: width 0.4s ease;
+      border-radius: 10px;
+    }
+    .quiz-step { display: none; }
+    .quiz-step.active { display: block; animation: fadeIn 0.4s; }
+    @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+    .quiz-counter { color: var(--rosa-fuerte); font-size: 14px; font-weight: 500; margin-bottom: 12px; letter-spacing: 1px; }
+    .quiz-question { font-family: 'Playfair Display', serif; font-size: 1.5rem; margin-bottom: 28px; line-height: 1.4; }
+    .quiz-options { display: flex; flex-direction: column; gap: 12px; }
+    .quiz-option {
+      background: var(--crema);
+      border: 2px solid transparent;
+      padding: 16px 22px;
+      border-radius: 12px;
+      cursor: pointer;
+      text-align: left;
+      font-family: inherit;
+      font-size: 1rem;
+      color: var(--texto);
+      transition: all 0.25s;
+      font-weight: 400;
+    }
+    .quiz-option:hover { border-color: var(--rosa-medio); background: white; transform: translateX(4px); }
+    .quiz-option.selected { border-color: var(--rosa-fuerte); background: var(--rosa-suave); font-weight: 500; }
+    .quiz-form-step input {
+      width: 100%;
+      padding: 14px 18px;
+      border: 2px solid var(--rosa-suave);
+      border-radius: 12px;
+      font-size: 1rem;
+      font-family: inherit;
+      margin-bottom: 14px;
+      transition: border-color 0.3s;
+    }
+    .quiz-form-step input:focus { outline: none; border-color: var(--rosa-fuerte); }
+    .quiz-nav { display: flex; justify-content: space-between; margin-top: 30px; gap: 12px; }
+    .quiz-nav button { flex: 1; }
+
+    .result-box { text-align: center; }
+    .result-level {
+      display: inline-block;
+      background: linear-gradient(135deg, var(--rosa-medio), var(--rosa-fuerte));
+      color: white;
+      padding: 10px 28px;
+      border-radius: 30px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+    .result-box h3 { font-size: 1.8rem; margin-bottom: 16px; }
+    .result-box p.result-desc { color: var(--texto-suave); margin-bottom: 30px; }
+    .price-card {
+      background: var(--crema);
+      padding: 30px;
+      border-radius: 16px;
+      margin-bottom: 24px;
+    }
+    .price-card .precio {
+      font-size: 2.5rem;
+      font-family: 'Playfair Display', serif;
+      color: var(--rosa-fuerte);
+      font-weight: 700;
+    }
+    .price-card .precio small { font-size: 1rem; color: var(--texto-suave); font-weight: 400; }
+    .price-card ul { list-style: none; text-align: left; max-width: 320px; margin: 20px auto 0; }
+    .price-card ul li { padding: 8px 0; padding-left: 28px; position: relative; color: var(--texto-suave); }
+    .price-card ul li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--rosa-fuerte);
+      font-weight: 700;
+    }
+    .loading { display: none; color: var(--rosa-fuerte); margin-top: 12px; }
+
+    footer {
+      background: var(--texto);
+      color: var(--crema);
+      padding: 40px 0 24px;
+      text-align: center;
+    }
+    footer p { font-size: 0.9rem; opacity: 0.8; margin-bottom: 8px; }
+    footer a { color: var(--rosa-medio); text-decoration: none; }
+
+    @media (max-width: 640px) {
+      .quiz-box { padding: 32px 22px; }
+      .module-item { flex-direction: column; text-align: center; }
+      .hero { padding: 60px 0 80px; }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="container">
+      <span class="badge">CURSO PROFESIONAL DE UÑAS</span>
+      <h1>Convierte tu pasión por las uñas <br/>en un <span>negocio rentable</span></h1>
+      <p class="lead">Aprende técnicas profesionales paso a paso con Laura Rincón y descubre cómo cobrar lo que realmente vale tu trabajo. Empieza haciendo el quiz gratuito para conocer tu nivel.</p>
+      <a href="#quiz" class="btn">Hacer el quiz gratis →</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <p class="eyebrow">Por qué este curso</p>
+        <h2>Todo lo que necesitas para destacar</h2>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">💅</div>
+          <h3>Técnicas profesionales</h3>
+          <p>Domina acrílico, gel, encapsulado y nail art desde lo básico hasta lo avanzado.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">📱</div>
+          <h3>Acceso de por vida</h3>
+          <p>Estudia a tu ritmo, desde cualquier dispositivo, sin fecha límite ni presión.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">💰</div>
+          <h3>Aumenta tus ingresos</h3>
+          <p>Aprende a cobrar lo que vales, fidelizar clientas y llenar tu agenda.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">🎓</div>
+          <h3>Certificado al finalizar</h3>
+          <p>Recibe tu certificado digital para mostrar a tus clientas y respaldar tu trabajo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="modules">
+    <div class="container">
+      <div class="section-title">
+        <p class="eyebrow">Contenido del curso</p>
+        <h2>Lo que vas a aprender</h2>
+      </div>
+      <div class="modules-list">
+        <div class="module-item">
+          <div class="module-number">1</div>
+          <div>
+            <h4>Fundamentos y preparación</h4>
+            <p>Anatomía de la uña, higiene, desinfección y preparación de la lámina ungueal.</p>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-number">2</div>
+          <div>
+            <h4>Técnica de acrílico paso a paso</h4>
+            <p>Aplicación, estructura, simetría y limado perfecto para uñas duraderas.</p>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-number">3</div>
+          <div>
+            <h4>Gel y encapsulado</h4>
+            <p>Construcción con gel, encapsulado de elementos y acabados profesionales.</p>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-number">4</div>
+          <div>
+            <h4>Nail art y tendencias</h4>
+            <p>Técnicas de decoración, francesa moderna, efectos cromados y diseños virales.</p>
+          </div>
+        </div>
+        <div class="module-item">
+          <div class="module-number">5</div>
+          <div>
+            <h4>Tu negocio rentable</h4>
+            <p>Precios, marketing en Instagram, fidelización de clientas y agenda llena.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <p class="eyebrow">Tu instructora</p>
+        <h2>Aprende de una profesional</h2>
+      </div>
+      <div class="instructor">
+        <div class="instructor-img">LR</div>
+        <h3>Laura Rincón</h3>
+        <p class="role">Nail Artist Profesional</p>
+        <p class="bio">Apasionada por las uñas y por compartir todo lo que he aprendido. Mi misión es que cada nail artist tenga las herramientas técnicas y de negocio para crecer y vivir de lo que ama.</p>
+        <a class="ig-link" href="https://www.instagram.com/laurarincon_nails" target="_blank" rel="noopener">
+          📷 @laurarincon_nails
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="quiz" id="quiz">
+    <div class="container">
+      <div class="section-title">
+        <p class="eyebrow">Quiz gratuito · 1 minuto</p>
+        <h2>Descubre tu nivel como nail artist</h2>
+      </div>
+      <div class="quiz-box">
+        <div class="quiz-progress"><div class="quiz-progress-bar" id="progressBar"></div></div>
+
+        <div class="quiz-step active" data-step="1">
+          <p class="quiz-counter">PREGUNTA 1 DE 5</p>
+          <h3 class="quiz-question">¿Cuánto tiempo llevas haciendo uñas?</h3>
+          <div class="quiz-options" data-q="q1">
+            <button class="quiz-option" data-value="0">Aún no he empezado / es algo nuevo para mí</button>
+            <button class="quiz-option" data-value="1">Menos de 6 meses</button>
+            <button class="quiz-option" data-value="2">Entre 6 meses y 2 años</button>
+            <button class="quiz-option" data-value="3">Más de 2 años</button>
+          </div>
+        </div>
+
+        <div class="quiz-step" data-step="2">
+          <p class="quiz-counter">PREGUNTA 2 DE 5</p>
+          <h3 class="quiz-question">¿Has trabajado con acrílico o gel antes?</h3>
+          <div class="quiz-options" data-q="q2">
+            <button class="quiz-option" data-value="0">Nunca, quiero aprender desde cero</button>
+            <button class="quiz-option" data-value="1">Solo he probado con gel/semipermanente</button>
+            <button class="quiz-option" data-value="2">He trabajado con acrílico pero quiero perfeccionar</button>
+            <button class="quiz-option" data-value="3">Domino ambas técnicas pero busco resultados pro</button>
+          </div>
+        </div>
+
+        <div class="quiz-step" data-step="3">
+          <p class="quiz-counter">PREGUNTA 3 DE 5</p>
+          <h3 class="quiz-question">¿Qué es lo que más se te dificulta hoy?</h3>
+          <div class="quiz-options" data-q="q3">
+            <button class="quiz-option" data-value="0">No sé por dónde empezar</button>
+            <button class="quiz-option" data-value="1">La estructura y el limado parejo</button>
+            <button class="quiz-option" data-value="2">Los acabados y la duración del trabajo</button>
+            <button class="quiz-option" data-value="3">Crear diseños propios y nail art avanzado</button>
+          </div>
+        </div>
+
+        <div class="quiz-step" data-step="4">
+          <p class="quiz-counter">PREGUNTA 4 DE 5</p>
+          <h3 class="quiz-question">¿Tienes clientas actualmente?</h3>
+          <div class="quiz-options" data-q="q4">
+            <button class="quiz-option" data-value="0">Todavía no tengo clientas</button>
+            <button class="quiz-option" data-value="1">Entre 1 y 5 clientas (familia/amigas)</button>
+            <button class="quiz-option" data-value="2">Entre 6 y 15 clientas habituales</button>
+            <button class="quiz-option" data-value="3">Más de 15 clientas, ya vivo (o casi) de esto</button>
+          </div>
+        </div>
+
+        <div class="quiz-step" data-step="5">
+          <p class="quiz-counter">PREGUNTA 5 DE 5</p>
+          <h3 class="quiz-question">¿Cuál es tu meta principal con este curso?</h3>
+          <div class="quiz-options" data-q="q5">
+            <button class="quiz-option" data-value="0">Empezar de cero y aprender lo básico bien</button>
+            <button class="quiz-option" data-value="1">Mejorar mi técnica y darle más calidad</button>
+            <button class="quiz-option" data-value="2">Cobrar más por mi trabajo y profesionalizarme</button>
+            <button class="quiz-option" data-value="3">Convertirme en referente en mi ciudad</button>
+          </div>
+        </div>
+
+        <div class="quiz-step quiz-form-step" data-step="6">
+          <p class="quiz-counter">CASI LISTO ✨</p>
+          <h3 class="quiz-question">¿A dónde te enviamos tu resultado personalizado?</h3>
+          <input type="text" id="nombre" placeholder="Tu nombre" required />
+          <input type="email" id="email" placeholder="Tu mejor email" required />
+          <p style="font-size:0.85rem;color:var(--texto-suave);margin-bottom:18px;">Te enviaremos tu resultado + una sorpresa por email. Sin spam, lo prometemos.</p>
+          <button class="btn" id="submitQuiz" style="width:100%;">Ver mi resultado →</button>
+          <p class="loading" id="loading">Calculando tu resultado...</p>
+        </div>
+
+        <div class="quiz-step result-box" data-step="7">
+          <span class="result-level" id="resultLevel">Nivel</span>
+          <h3 id="resultTitle">¡Tu nivel está listo!</h3>
+          <p class="result-desc" id="resultDesc"></p>
+          <div class="price-card">
+            <p style="margin-bottom:12px;color:var(--texto-suave);">Curso Profesional de Uñas</p>
+            <p class="precio">$<span id="precioNum">97</span> <small>USD</small></p>
+            <ul>
+              <li>5 módulos completos en video HD</li>
+              <li>Acceso de por vida</li>
+              <li>Certificado al finalizar</li>
+              <li>Comunidad privada de nail artists</li>
+              <li>Soporte directo por Instagram</li>
+            </ul>
+          </div>
+          <a class="btn" id="checkoutBtn" href="https://tools.marcelocrm.com/payment-link/69d6b5bdc6a0e600f4d08674" target="_blank" rel="noopener" style="width:100%;display:block;text-align:center;text-decoration:none;box-sizing:border-box;">Comprar ahora 🔒</a>
+          <p style="font-size:0.8rem;color:var(--texto-suave);margin-top:14px;">Pago 100% seguro · Tarjeta de crédito/débito · Garantía 7 días</p>
+        </div>
+
+        <div class="quiz-nav" id="quizNav">
+          <button class="btn btn-outline" id="prevBtn" style="display:none;">← Atrás</button>
+          <button class="btn" id="nextBtn" disabled>Siguiente →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="anio"></span> Laura Rincón Nails · Todos los derechos reservados</p>
+      <p><a href="https://www.instagram.com/laurarincon_nails" target="_blank" rel="noopener">@laurarincon_nails</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('anio').textContent = new Date().getFullYear();
+
+    const answers = { q1: null, q2: null, q3: null, q4: null, q5: null };
+    let currentStep = 1;
+    const totalSteps = 7;
+    const stepsConPregunta = 5;
+
+    const progressBar = document.getElementById('progressBar');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const quizNav = document.getElementById('quizNav');
+
+    // Cargar precio desde el servidor
+    fetch('/api/config').then(r => r.json()).then(cfg => {
+      if (cfg.precio) document.getElementById('precioNum').textContent = cfg.precio;
+    }).catch(() => {});
+
+    function showStep(n) {
+      document.querySelectorAll('.quiz-step').forEach(el => el.classList.remove('active'));
+      const stepEl = document.querySelector(`.quiz-step[data-step="${n}"]`);
+      stepEl.classList.add('active');
+      currentStep = n;
+      const pct = Math.min(((n - 1) / stepsConPregunta) * 100, 100);
+      progressBar.style.width = pct + '%';
+      prevBtn.style.display = n > 1 && n <= 6 ? 'inline-block' : 'none';
+      if (n >= 6) {
+        quizNav.style.display = 'none';
+      } else {
+        quizNav.style.display = 'flex';
+        const key = 'q' + n;
+        nextBtn.disabled = answers[key] === null;
+        nextBtn.textContent = n === stepsConPregunta ? 'Continuar →' : 'Siguiente →';
+      }
+    }
+
+    document.querySelectorAll('.quiz-options').forEach(group => {
+      group.addEventListener('click', e => {
+        const btn = e.target.closest('.quiz-option');
+        if (!btn) return;
+        group.querySelectorAll('.quiz-option').forEach(o => o.classList.remove('selected'));
+        btn.classList.add('selected');
+        const q = group.dataset.q;
+        answers[q] = parseInt(btn.dataset.value, 10);
+        nextBtn.disabled = false;
+      });
+    });
+
+    nextBtn.addEventListener('click', () => {
+      if (currentStep < 6) showStep(currentStep + 1);
+    });
+    prevBtn.addEventListener('click', () => {
+      if (currentStep > 1) showStep(currentStep - 1);
+    });
+
+    document.getElementById('submitQuiz').addEventListener('click', async () => {
+      const nombre = document.getElementById('nombre').value.trim();
+      const email = document.getElementById('email').value.trim();
+      if (!nombre || !email || !email.includes('@')) {
+        alert('Por favor completa tu nombre y un email válido.');
+        return;
+      }
+      document.getElementById('loading').style.display = 'block';
+      document.getElementById('submitQuiz').disabled = true;
+
+      const total = answers.q1 + answers.q2 + answers.q3 + answers.q4 + answers.q5;
+      let nivel, titulo, descripcion;
+      if (total <= 4) {
+        nivel = 'principiante';
+        titulo = '¡Eres una Nail Artist en formación! 🌱';
+        descripcion = 'Estás empezando tu camino y eso es lo más emocionante. Este curso te llevará paso a paso desde lo básico hasta que hagas uñas con confianza profesional. Tienes todo el potencial para destacar.';
+      } else if (total <= 9) {
+        nivel = 'intermedia';
+        titulo = '¡Eres una Nail Artist en crecimiento! ✨';
+        descripcion = 'Ya tienes bases sólidas, pero sabes que hay un siguiente nivel. Este curso te ayudará a perfeccionar tu técnica, cobrar mejor y diferenciarte del resto. Estás a un paso de profesionalizarte.';
+      } else {
+        nivel = 'avanzada';
+        titulo = '¡Eres una Nail Artist Pro! 👑';
+        descripcion = 'Tienes experiencia y resultados, pero buscas refinar detalles y elevar tu marca personal. Este curso te dará las herramientas finales para convertirte en referente y subir tus precios con seguridad.';
+      }
+
+      try {
+        await fetch('/api/quiz-submit', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ nombre, email, nivel, score: total, answers })
+        });
+      } catch (err) {
+        console.warn('No se pudo guardar el lead en CRM:', err);
+      }
+
+      document.getElementById('resultLevel').textContent = 'Nivel ' + nivel;
+      document.getElementById('resultTitle').textContent = titulo;
+      document.getElementById('resultDesc').textContent = descripcion;
+      window._leadData = { nombre, email, nivel, score: total };
+      showStep(7);
+    });
+
+    // El botón "Comprar" es un link directo al Payment Link de Marcelo CRM,
+    // no necesita JS para el checkout. Solo trackeamos el clic para saber qué
+    // leads del quiz acabaron clicando comprar (útil para analytics futuras).
+    document.getElementById('checkoutBtn').addEventListener('click', () => {
+      try {
+        const lead = window._leadData || {};
+        fetch('/api/track-checkout-click', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(lead),
+          keepalive: true
+        }).catch(() => {});
+      } catch (e) { /* ignorar */ }
+    });
+
+    showStep(1);
+  </script>
+
+</body>
+</html>
