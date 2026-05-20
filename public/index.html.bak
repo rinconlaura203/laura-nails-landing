@@ -1045,7 +1045,7 @@
   <section>
     <div class="container">
       <div class="section-title">
-        < style="font-size: 0.9rem; letter-spacing: 0.12em;" class="eyebrow">Sobre tu Instructora</p>
+        <p class="eyebrow">Sobre tu Instructora</p>
         <h2>Dos décadas perfeccionando el <em>arte</em></h2>
         <p class="lead">Trayectoria, técnica y visión empresarial reunidas en una sola voz que ha formado a manicuristas en Colombia y Estados Unidos.</p>
       </div>
@@ -1316,26 +1316,16 @@
           </div>
         </div>
 
-        <div class="quiz-step" data-step="5">
-          <h3 class="quiz-question">¿Qué tan lista estás para invertir en tu nueva carrera?</h3>
-          <div class="quiz-options">
-            <label class="quiz-option"><input type="radio" name="q5" value="lista"><span>Lista, esto es mi prioridad ahora</span></label>
-            <label class="quiz-option"><input type="radio" name="q5" value="casi"><span>Casi lista, necesito organizarme un poco</span></label>
-            <label class="quiz-option"><input type="radio" name="q5" value="evaluando"><span>Todavía estoy evaluando</span></label>
-            <label class="quiz-option"><input type="radio" name="q5" value="info"><span>Primero necesito más información</span></label>
-          </div>
-        </div>
-        <div class="quiz-step quiz-form-step" data-step="6">
+        <div class="quiz-step quiz-form-step" data-step="5">
           <h3 class="quiz-question">Dime cómo te contactamos con tu resultado</h3>
           <div class="quiz-options">
             <input type="text" id="quizNombre" placeholder="Tu nombre" autocomplete="given-name" />
             <input type="email" id="quizEmail" placeholder="tu@email.com" autocomplete="email" />
-          <input type="tel" id="quizTelefono" name="telefono" placeholder="Tu WhatsApp (+1 305 555 1234)" autocomplete="tel" />
             <p class="quiz-counter" style="margin-top:8px;">Te enviamos tu resultado personalizado y los detalles del grupo. Sin spam.</p>
           </div>
         </div>
 
-        <div class="quiz-step result-box" data-step="7">
+        <div class="quiz-step result-box" data-step="6">
           <h3 id="quizResultTitle" class="result-level">Calculando tu nivel...</h3>
           <p id="quizResultText" class="result-desc"></p>
           <a href="#inversion" id="quizResultCta" class="btn btn-gold" style="display:none;">Ver mis planes de inversión</a>
