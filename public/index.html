@@ -1045,7 +1045,7 @@
   <section>
     <div class="container">
       <div class="section-title">
-        < style="font-size: 0.9rem; letter-spacing: 0.12em;" class="eyebrow">Sobre tu Instructora</p>
+        <p style="font-size: 0.9rem; letter-spacing: 0.12em;" class="eyebrow">Sobre tu Instructora</p>
         <h2>Dos décadas perfeccionando el <em>arte</em></h2>
         <p class="lead">Trayectoria, técnica y visión empresarial reunidas en una sola voz que ha formado a manicuristas en Colombia y Estados Unidos.</p>
       </div>
@@ -1459,7 +1459,7 @@
     }
 
     nextBtn.addEventListener('click', async () => {
-      if (currentStep <= 4) {
+      if (currentStep <= 5) {
         const ans = getSelected('q' + currentStep);
         if (!ans) {
           alert('Selecciona una opción para continuar.');
@@ -1468,10 +1468,10 @@
         answers['q' + currentStep] = ans;
         currentStep++;
         showStep(currentStep);
-      } else if (currentStep === 5) {
+      } else if (currentStep === 6) {
         const ok = await submitQuiz();
         if (ok) {
-          currentStep = 6;
+          currentStep = 7;
           showStep(currentStep);
         }
       }
