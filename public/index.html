@@ -999,6 +999,12 @@
       }
     }
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css"/>
+  <style>
+    .iti { width: 100%; display: block; }
+    .iti__flag-container { z-index: 100; }
+    .iti__selected-flag { background: rgba(255,255,255,0.1); border-radius: 4px 0 0 4px; }
+  </style>
 </head>
 <body>
 
@@ -1439,6 +1445,7 @@
     async function submitQuiz() {
       const nombre = document.getElementById('quizNombre').value.trim();
       const email = document.getElementById('quizEmail').value.trim();
+      const telefono = window.phoneIti ? window.phoneIti.getNumber() : document.getElementById('quizTelefono').value.trim();
       if (!nombre || !email) {
         alert('Por favor ingresa tu nombre y email para ver tu resultado.');
         return false;
@@ -1451,7 +1458,7 @@
         await fetch('/api/quiz-submit', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ nombre, email, nivel: result.nivel, score: result.score, answers })
+          body: JSON.stringify({ nombre, email, telefono, nivel: result.nivel, score: result.score, answers })
         });
       } catch (e) {
         console.warn('No se pudo enviar lead:', e);
@@ -1489,6 +1496,19 @@
     });
 
     showStep(1);
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var phoneEl = document.getElementById('quizTelefono');
+      if (phoneEl && window.intlTelInput) {
+        window.phoneIti = window.intlTelInput(phoneEl, {
+          initialCountry: 'us',
+          preferredCountries: ['us', 'mx', 'co', 've', 'es', 'ar', 'pe', 'ec', 'do', 'pr'],
+          separateDialCode: true
+        });
+      }
+    });
   </script>
 </body>
 </html>
