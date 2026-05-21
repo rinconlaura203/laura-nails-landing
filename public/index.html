@@ -1455,7 +1455,7 @@
       document.getElementById('quizResultText').textContent = result.texto;
       document.getElementById('quizResultCta').style.display = 'inline-block';
       try {
-        await fetch('/api/quiz-submit', {
+        fetch('/api/quiz-submit', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ nombre, email, telefono, nivel: result.nivel, score: result.score, answers })
