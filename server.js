@@ -75,5 +75,28 @@ app.post('/api/subscribe', async (req, res) => {
   res.json({ success: true, message: 'Registrada exitosamente' });
 });
 
+app.post('/api/quiz-submit', async (req, res) => {
+  const { nombre, email, nivel, score, answers } = req.body;
+  if (!email) return res.status(400).json({ error: 'Email requerido' });
+  try {
+    const mlResponse = await fetch('https://connect.mailerlite.com/api/subscribers', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${ML_KEY}` },
+      body: JSON.stringify({ email, fields: { name: nombre || '', experience: nivel || '' }, groups: [ML_GROUP], status: 'active' })
+    });
+    console.log('MailerLite:', mlResponse.status);
+  } catch (err) { console.error('MailerLite error:', err.message); }
+  try {
+    const nameParts = (nombre || '').trim().split(' ');
+    const ghlResponse = await fetch('https://services.leadconnectorhq.com/contacts/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${GHL_TOKEN}`, 'Version': '2021-07-28' },
+      body: JSON.stringify({ firstName: nameParts[0]||'', lastName: nameParts.slice(1).join(' ')||'', email, locationId: GHL_LOCATION, tags: ['landing-nails-quiz', nivel||''] })
+    });
+    console.log('MarceloCRM:', ghlResponse.status);
+  } catch (err) { console.error('MarceloCRM error:', err.message); }
+  res.json({ success: true, message: 'Registrada exitosamente' });
+});
+
 app.get('*', (req, res) => res.sendFile(path.join(__dirname, 'public', 'index.html')));
 app.listen(PORT, () => console.log('Puerto ' + PORT));
