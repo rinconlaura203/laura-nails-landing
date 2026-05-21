@@ -1456,6 +1456,9 @@
       } catch (e) {
         console.warn('No se pudo enviar lead:', e);
       }
+            document.getElementById('quizResultTitle').textContent = result.nivel;
+      document.getElementById('quizResultText').textContent = result.texto;
+      showStep(7);
       return true;
     }
 
