@@ -75,26 +75,58 @@ app.post('/api/subscribe', async (req, res) => {
   res.json({ success: true, message: 'Registrada exitosamente' });
 });
 
+// QUIZ SUBMIT — actualizado para incluir telefono + tags por nivel
 app.post('/api/quiz-submit', async (req, res) => {
-  const { nombre, email, nivel, score, answers } = req.body;
+  const { nombre, email, telefono, nivel, score, answers } = req.body;
   if (!email) return res.status(400).json({ error: 'Email requerido' });
+
+  // 1. MailerLite con telefono incluido
   try {
     const mlResponse = await fetch('https://connect.mailerlite.com/api/subscribers', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${ML_KEY}` },
-      body: JSON.stringify({ email, fields: { name: nombre || '', experience: nivel || '' }, groups: [ML_GROUP], status: 'active' })
+      body: JSON.stringify({
+        email,
+        fields: {
+          name: nombre || '',
+          phone: telefono || '',
+          experience: nivel || '',
+          quiz_score: String(score || '')
+        },
+        groups: [ML_GROUP],
+        status: 'active'
+      })
     });
-    console.log('MailerLite:', mlResponse.status);
-  } catch (err) { console.error('MailerLite error:', err.message); }
+    console.log('MailerLite quiz:', mlResponse.status);
+  } catch (err) { console.error('MailerLite quiz error:', err.message); }
+
+  // 2. MarceloCRM (GoHighLevel) con telefono + tag de nivel
   try {
     const nameParts = (nombre || '').trim().split(' ');
+    const firstName = nameParts[0] || '';
+    const lastName = nameParts.slice(1).join(' ') || '';
+    const ghlBody = {
+      firstName,
+      lastName,
+      email,
+      locationId: GHL_LOCATION,
+      tags: ['landing-nails-quiz', nivel || ''].filter(Boolean)
+    };
+    if (telefono) ghlBody.phone = telefono;
+    if (score !== undefined) ghlBody.customFields = [{ key: 'quiz_score', field_value: String(score) }];
+
     const ghlResponse = await fetch('https://services.leadconnectorhq.com/contacts/', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Authorization': `Bearer ${GHL_TOKEN}`, 'Version': '2021-07-28' },
-      body: JSON.stringify({ firstName: nameParts[0]||'', lastName: nameParts.slice(1).join(' ')||'', email, locationId: GHL_LOCATION, tags: ['landing-nails-quiz', nivel||''] })
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${GHL_TOKEN}`,
+        'Version': '2021-07-28'
+      },
+      body: JSON.stringify(ghlBody)
     });
-    console.log('MarceloCRM:', ghlResponse.status);
-  } catch (err) { console.error('MarceloCRM error:', err.message); }
+    console.log('MarceloCRM quiz:', ghlResponse.status);
+  } catch (err) { console.error('MarceloCRM quiz error:', err.message); }
+
   res.json({ success: true, message: 'Registrada exitosamente' });
 });
 
