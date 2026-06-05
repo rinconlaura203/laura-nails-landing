@@ -1802,16 +1802,22 @@
       const compromiso = (a.q3 === 'mucho' || a.q3 === 'todo') ? 2 : 1;
       const ambicion = (a.q4 === 'todo' || a.q4 === 'negocio') ? 2 : 1;
       const score = compromiso + ambicion;
-      let nivel = 'Carolina Lista';
-      let texto = 'Tienes exactamente el perfil que el programa busca: claridad sobre lo que quieres y disposición real para construirlo. Es tu momento.';
+      let nivel = 'Arquitecta Lista';
+      let texto = 'Tienes exactamente el perfil que Manicurista Start busca: claridad sobre lo que quieres y disposición real para construirlo. Es tu momento.';
+      let ctaText = 'Ver mis planes de inversión';
+      let ctaHref = '#inversion';
       if (score >= 4) {
-        nivel = 'Carolina Imparable';
-        texto = 'Tienes claridad, ambición y disposición de tiempo. Eres exactamente quien transforma su vida en esta edición. No dejes pasar tu cupo.';
+        nivel = 'Arquitecta Imparable';
+        texto = 'Tienes claridad, ambición y disposición. Eres exactamente quien transforma su vida en esta edición. No dejes pasar tu cupo — habla directo con Laura ahora.';
+        ctaText = 'Apartar mi cupo ahora →';
+        ctaHref = 'https://wa.link/n10bl4';
       } else if (score <= 2) {
-        nivel = 'Carolina en Despertar';
-        texto = 'Estás empezando a moverte y eso ya es mucho. El método paso a paso de Manicurista Start está diseñado justo para ti.';
+        nivel = 'Arquitecta en Despertar';
+        texto = 'Estás empezando a moverte y eso ya es mucho. El método paso a paso de Manicurista Start está diseñado justo para ti. Conversa con Laura sin compromiso.';
+        ctaText = 'Conversar con Laura →';
+        ctaHref = 'https://wa.link/n10bl4';
       }
-      return { nivel, texto, score };
+      return { nivel, texto, score, ctaText, ctaHref };
     }
 
     async function submitQuiz() {
@@ -1823,9 +1829,31 @@
         return false;
       }
       const result = calcResult();
-      document.getElementById('quizResultTitle').textContent = result.nivel;
+      const firstName = nombre.split(' ')[0];
+
+      document.getElementById('quizResultTitle').textContent = firstName + ', eres ' + result.nivel;
       document.getElementById('quizResultText').textContent = result.texto;
-      document.getElementById('quizResultCta').style.display = 'inline-block';
+
+      const ctaBtn = document.getElementById('quizResultCta');
+      ctaBtn.textContent = result.ctaText;
+      ctaBtn.href = result.ctaHref;
+      if (result.ctaHref.indexOf('http') === 0) {
+        ctaBtn.target = '_blank';
+        ctaBtn.rel = 'noopener';
+      }
+      ctaBtn.style.display = 'inline-block';
+
+      if (typeof fbq === 'function') {
+        try {
+          fbq('track', 'Lead', {
+            content_name: 'Quiz Manicurista Start',
+            content_category: result.nivel,
+            value: result.score,
+            currency: 'USD'
+          });
+        } catch (e) { console.warn('fbq Lead error:', e); }
+      }
+
       try {
         fetch('/api/quiz-submit', {
           method: 'POST',
@@ -1835,8 +1863,7 @@
       } catch (e) {
         console.warn('No se pudo enviar lead:', e);
       }
-            document.getElementById('quizResultTitle').textContent = result.nivel;
-      document.getElementById('quizResultText').textContent = result.texto;
+
       showStep(7);
       return true;
     }
