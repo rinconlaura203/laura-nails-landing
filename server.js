@@ -130,5 +130,6 @@ app.post('/api/quiz-submit', async (req, res) => {
   res.json({ success: true, message: 'Registrada exitosamente' });
 });
 
+app.get('/links', (req, res) => res.sendFile(path.join(__dirname, 'public', 'linktree.html')));
 app.get('*', (req, res) => res.sendFile(path.join(__dirname, 'public', 'index.html')));
 app.listen(PORT, () => console.log('Puerto ' + PORT));
